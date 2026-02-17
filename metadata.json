@@ -1,0 +1,7 @@
+{
+  "name": "Claw Bot Command Center",
+  "description": "Oficjalny interfejs AI Karrena Tonoyana z hybrydową komunikacją głosowo-tekstową.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
