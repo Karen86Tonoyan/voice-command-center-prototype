@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Claw Bot Command Center
 
-# Run and deploy your AI Studio app
+> **Experimental Vite/React control interface with voice and synthesis components**
 
-This contains everything you need to run your app locally.
+Claw Bot Command Center is a small TypeScript browser application. The tracked
+source provides the application shell, an `AssistantVoice` component, a
+`ClawSynthesizer` component and audio utility functions. No backend service or
+credential configuration is included.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1m3IH9SajXxAgNHITYhynUXxAWxfJFMp2
+## Structure
 
-## Run Locally
+```text
+App.tsx                    application entry component
+components/AssistantVoice  voice-oriented UI component
+components/ClawSynthesizer synthesis-oriented UI component
+services/audioUtils.ts     client-side audio helpers
+metadata.json              application metadata
+```
 
-**Prerequisites:**  Node.js
+## Requirements and local run
 
+Use current Node.js and npm:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+npm install
+npm run dev
+```
+
+The project also declares `npm run build` and `npm run preview`.
+
+## Status and limitations
+
+This is an AI Studio/Vite prototype. The component names describe interface
+intent, not a hosted assistant, speech service or completed voice pipeline.
+Browser access to microphones and audio devices is subject to browser
+permissions and must be used with user consent.
+
+## Licence
+
+No licence file is present in the repository.
